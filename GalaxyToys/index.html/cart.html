@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito de compras - GalaxyToys</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <img src="./logo.png" alt="GalaxyToys" class="logo-small" />
+    <div class="icons">
+      <span onclick="history.back()">🔙</span>
+      <span>☰</span>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Tu carrito 🛒</h2>
+
+    <div class="card">
+      <img src="assets/toy1.jpg" alt="Producto" />
+      <p>AOT Eren Jaeger - Figura de acción</p>
+      <strong>$150.000</strong>
+    </div>
+
+    <div class="card">
+      <img src="assets/toy2.jpg" alt="Producto" />
+      <p>Dragon Ball Z - Goku</p>
+      <strong>$65.000</strong>
+    </div>
+
+    <h3 style="margin-top: 20px;">Total: <span style="color:#ffcc00;">$215.000</span></h3>
+
+    <button onclick="location.href='checkout.html'">Continuar con el pago</button>
+  </div>
+</body>
+</html>

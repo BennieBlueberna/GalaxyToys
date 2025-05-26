@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalle del Producto - GalaxyToys</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <img src="./logo.png" alt="GalaxyToys" class="logo-small" />
+    <div class="icons">
+      <span onclick="history.back()">🔙</span>
+      <span onclick="location.href='cart.html'">🛒</span>
+      <span>☰</span>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Aquí va el detalle del producto dinámico -->
+    <div id="detalleProducto"></div>
+
+    <hr style="margin: 30px 0;" />
+
+    <h3>Productos similares</h3>
+    <div class="product-grid">
+      <div class="card">
+        <img src="./assets/imagen1A.jpg" alt="Goku" />
+        <p>Dragon Ball Z - Goku</p>
+        <strong>$65.000</strong>
+        <button onclick="location.href='product.html?nombre=Goku&precio=65000&img=toy2.jpg'">Ver más</button>
+      </div>
+
+      <div class="card">
+        <img src="./assets/imagen5A.jpg" alt="Luffy" />
+        <p>One Piece - Luffy</p>
+        <strong>$95.000</strong>
+        <button onclick="location.href='product.html?nombre=Luffy&precio=95000&img=toy3.jpg'">Ver más</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get("nombre") || "AOT Eren Jaeger - Figura de acción";
+    const precio = params.get("precio") || "150000";
+    const img = params.get("img") || "toy1.jpg";
+
+    const detalle = document.getElementById("detalleProducto");
+    detalle.innerHTML = `
+      <img src="assets/${img}" alt="${nombre}" style="width:100%; border-radius: 12px;" />
+      <h2>${nombre}</h2>
+      <p>Figura articulada coleccionable. Ideal para fanáticos del anime.</p>
+      <h3 style="color:#ff3333;">$${parseInt(precio).toLocaleString()}</h3>
+      <button onclick="comprarProducto()">Comprar</button>
+    `;
+
+    function comprarProducto() {
+      localStorage.setItem("productoSeleccionado", JSON.stringify({ nombre, precio, img }));
+      location.href = "checkout.html";
+    }
+  </script>
+</body>
+</html>
+

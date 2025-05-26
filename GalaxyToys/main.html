@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GalaxyToys - Catálogo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="main-header">
+    <img src="./logo.png" alt="GalaxyToys" class="logo-small" />
+    <div class="icons">
+      <span>🔍</span>
+      <span>🛒</span>
+      <span>☰</span>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <!-- Buscador -->
+    <input type="text" placeholder="Buscar juguetes..." class="search-bar" id="searchInput" onkeyup="buscarProducto()" />
+
+    <!-- Botones de categorías -->
+    <div class="categories">
+      <a href="#anime"><button>Anime</button></a>
+      <a href="#bebes"><button>Bebés</button></a>
+      <a href="#electronicos"><button>Electrónicos</button></a>
+      <a href="#destacados"><button>Destacados</button></a>
+    </div>
+
+    <!-- SECCIÓN ANIME -->
+    <h3 id="anime">Anime</h3>
+    <div class="product-carousel">
+      <div class="card" data-name="Goku"><img src="./assets/imagen1A.jpg"><p>Goku</p><strong>$65.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Eren"><img src="./assets/imagen2A.png"><p>Eren</p><strong>$150.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Momo"><img src="./assets/imagen4A.jpg"><p>Momo</p><strong>$75.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Tanjiro"><img src="./assets/imagen8A.png"><p>Tanjiro</p><strong>$90.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Naruto"><img src="./assets/imagen9A.png"><p>Naruto</p><strong>$120.000</strong><button>Comprar</button></div>
+    </div>
+    <div class="product-carousel">
+      <div class="card" data-name="Gohan"><img src="./assets/imagen7A.png"><p>Okorun Peluche</p><strong>$68.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Levi"><img src="./assets/imagen6A.png"><p>Pibe Mot </p><strong>$155.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Midoriya"><img src="./assets/imagen5A.jpg"><p>Luffy figura</p><strong>$70.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Bakugo"><img src="./assets/imagen 3A.png"><p>Dragon ball figuras</p><strong>$88.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Killua"><img src="./assets/imagen10A.jpg"><p>Eva 01 Figura</p><strong>$77.000</strong><button>Comprar</button></div>
+    </div>
+
+    <!-- SECCIÓN BEBÉS -->
+    <h3 id="anime">Bebes</h3>
+    <div class="product-carousel">
+      <div class="card" data-name="Goku"><img src="./assets/Bebe1.png"><p>Goku</p><strong>$65.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Eren"><img src="./assets/Bebe2.png"><p>Eren</p><strong>$150.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Momo"><img src="./assets/Bebe3.png"><p>Momo</p><strong>$75.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Tanjiro"><img src="./assets/Bebe4.png"><p>Tanjiro</p><strong>$90.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Naruto"><img src="./assets/Bebe5.png"><p>Naruto</p><strong>$120.000</strong><button>Comprar</button></div>
+    </div>
+    <div class="product-carousel">
+      <div class="card" data-name="Gohan"><img src="./assets/Bebe6.png"><p>Gohan</p><strong>$68.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Levi"><img src="./assets/Bebe7.png"><p>Levi</p><strong>$155.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Midoriya"><img src="./assets/Bebe8.png"><p>Midoriya</p><strong>$70.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Bakugo"><img src="./assets/Bebe9.jpg"><p>Bakugo</p><strong>$88.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Killua"><img src="./assets/Bebe10.png"><p>Killua</p><strong>$77.000</strong><button>Comprar</button></div>
+    </div>
+
+    <!-- SECCIÓN ELECTRÓNICOS -->
+    <h3 id="anime">Electronicos</h3>
+    <div class="product-carousel">
+      <div class="card" data-name="Goku"><img src="./assets/Electronic1.png"><p>Goku</p><strong>$65.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Eren"><img src="./assets/Electronic2.png"><p>Eren</p><strong>$150.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Momo"><img src="./assets/Electronic3.png"><p>Momo</p><strong>$75.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Tanjiro"><img src="./assets/Electronic4.png"><p>Tanjiro</p><strong>$90.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Naruto"><img src="./assets/Electronic5.png"><p>Naruto</p><strong>$120.000</strong><button>Comprar</button></div>
+    </div>
+    <div class="product-carousel">
+      <div class="card" data-name="Gohan"><img src="./assets/Electronic6.png"><p>Gohan</p><strong>$68.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Levi"><img src="./assets/Electronic7.png"><p>Levi</p><strong>$155.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Midoriya"><img src="./assets/Electronic8.png"><p>Midoriya</p><strong>$70.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Bakugo"><img src="./assets/Electronic9.png"><p>Bakugo</p><strong>$88.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Killua"><img src="./assets/"><p>Killua</p><strong>$77.000</strong><button>Comprar</button></div>
+    </div>
+
+    <!-- SECCIÓN DESTACADOS -->
+    <h3 id="anime">Destacados</h3>
+    <div class="product-carousel">
+      <div class="card" data-name="Goku"><img src="assets/toy1.jpg"><p>Goku</p><strong>$65.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Eren"><img src="assets/toy2.jpg"><p>Eren</p><strong>$150.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Momo"><img src="assets/toy3.jpg"><p>Momo</p><strong>$75.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Tanjiro"><img src="assets/toy4.jpg"><p>Tanjiro</p><strong>$90.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Naruto"><img src="assets/toy5.jpg"><p>Naruto</p><strong>$120.000</strong><button>Comprar</button></div>
+    </div>
+    <div class="product-carousel">
+      <div class="card" data-name="Gohan"><img src="assets/toy6.jpg"><p>Gohan</p><strong>$68.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Levi"><img src="assets/toy7.jpg"><p>Levi</p><strong>$155.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Midoriya"><img src="assets/toy8.jpg"><p>Midoriya</p><strong>$70.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Bakugo"><img src="assets/toy9.jpg"><p>Bakugo</p><strong>$88.000</strong><button>Comprar</button></div>
+      <div class="card" data-name="Killua"><img src="assets/toy10.jpg"><p>Killua</p><strong>$77.000</strong><button>Comprar</button></div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="nav-bottom">
+    <button>🏠</button>
+    <button>🔍</button>
+    <button>👤</button>
+  </footer>
+
+  <!-- Script de búsqueda -->
+  <script>
+    function buscarProducto() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        const nombre = card.dataset.name.toLowerCase();
+        card.style.order = nombre.includes(input) ? "-1" : "0";
+        card.style.border = nombre.includes(input) ? "2px solid #00ccff" : "none";
+      });
+    }
+  </script>
+</body>
+</html>

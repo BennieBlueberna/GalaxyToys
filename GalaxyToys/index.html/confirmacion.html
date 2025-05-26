@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Compra realizada</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <img src="logo.png" alt="GalaxyToys" class="logo-small" />
+  </header>
+
+  <div class="container">
+    <h2>¡Compra realizada con éxito! 🛒</h2>
+    <div id="resumen"></div>
+    <a href="main.html">Volver al inicio</a>
+  </div>
+
+  <script>
+    const producto = JSON.parse(localStorage.getItem("productoSeleccionado"));
+    if (producto) {
+      document.getElementById("resumen").innerHTML = `
+        <p>Compraste: <strong>${producto.nombre}</strong></p>
+        <p>Precio: $${parseInt(producto.precio).toLocaleString()}</p>
+        <img src="assets/${producto.img}" width="200" style="border-radius: 12px;" />
+      `;
+    }
+  </script>
+</body>
+</html>

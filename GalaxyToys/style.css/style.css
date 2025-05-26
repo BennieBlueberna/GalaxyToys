@@ -1,0 +1,161 @@
+/* === ESTILOS BASE === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #0d0d2b, #1c1c3a);
+  color: white;
+  padding-top: 80px; /* espacio para el header fijo */
+}
+
+/* === ENCABEZADO FIJO === */
+.main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0d0d2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+/* === LOGO E ICONOS DEL HEADER === */
+.logo-small {
+  width: 140px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons span {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* === CONTAINER GENERAL === */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* === ELEMENTOS INICIO === */
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #ffcc00;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #000;
+}
+
+.register {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+/* === BARRA DE BÚSQUEDA === */
+.search-bar {
+  width: 80%;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+/* === CATEGORÍAS === */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.categories button {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffcc00;
+  cursor: pointer;
+}
+
+/* === PRODUCTOS === */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  color: black;
+  width: 160px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card button {
+  margin-top: 10px;
+  background: #00ccff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* === MENÚ INFERIOR === */
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 999;
+}
+.guest-banner {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 10px;
+}
+
+.guest-banner img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  scroll-snap-align: start;
+}
+

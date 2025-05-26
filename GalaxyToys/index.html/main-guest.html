@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GalaxyToys - Invitado</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .guest-banner {
+      background-color: #ffeb3b;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .guest-banner img {
+      max-width: 100%;
+      height: auto;
+    }
+    .register-prompt {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      margin: 30px 0;
+      border-radius: 8px;
+    }
+    .register-btn {
+      background-color: #00ccff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .categories button {
+      margin: 5px;
+      padding: 8px 15px;
+      background-color: #ffc107;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <img src="./logo.png" alt="GalaxyToys" class="logo-small" />
+    <div class="icons">
+      <span class="icon">🔍</span>
+      <span class="icon">🛒</span>
+      <span class="icon">☰</span>
+    </div>
+  </header>
+
+  <!-- Banner de invitado -->
+  <div class="guest-banner">
+    <img src="assets/banner-invitado-1.png" alt="Explorando como invitado" />
+    <p>Estás explorando como invitado. Accede a más productos registrándote.</p>
+  </div>
+
+  <div class="container">
+    <input type="text" placeholder="Buscar juguetes..." class="search-bar" />
+
+    <div class="categories">
+      <button onclick="scrollToSection('anime')">Anime</button>
+      <button onclick="scrollToSection('bebes')">Bebés</button>
+      <button onclick="scrollToSection('electronicos')">Electrónicos</button>
+      <button onclick="scrollToSection('destacados')">Destacados</button>
+    </div>
+
+    <!-- SECCIÓN ANIME (solo segunda fila) -->
+    <h2 id="anime">Anime</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="./assets/imagen7A.png" alt="Okorun Peluche" />
+        <p>Okorun Peluche</p>
+        <strong>$68.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="./assets/imagen6A.png" alt="Pibe Mot" />
+        <p>Pibe Mot</p>
+        <strong>$155.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="./assets/imagen5A.jpg" alt="Luffy figura" />
+        <p>Luffy figura</p>
+        <strong>$70.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+    </div>
+
+    <!-- SECCIÓN BEBÉS (solo segunda fila) -->
+    <h2 id="bebes">Bebés</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="./assets/Bebe6.png" alt="Gohan" />
+        <p>Gohan</p>
+        <strong>$68.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Bebe7.png" alt="Levi" />
+        <p>Levi</p>
+        <strong>$155.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Bebe8.png" alt="Midoriya" />
+        <p>Midoriya</p>
+        <strong>$70.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+    </div>
+
+    <!-- SECCIÓN ELECTRÓNICOS (solo segunda fila) -->
+    <h2 id="electronicos">Electrónicos</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="./assets/Electronic6.png" alt="Gohan" />
+        <p>Gohan</p>
+        <strong>$68.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Electronic7.png" alt="Levi" />
+        <p>Levi</p>
+        <strong>$155.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Electronic8.png" alt="Midoriya" />
+        <p>Midoriya</p>
+        <strong>$70.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+    </div>
+
+    <!-- SECCIÓN DESTACADOS (solo segunda fila) -->
+    <h2 id="destacados">Destacados</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="assets/toy6.jpg" alt="Gohan" />
+        <p>Gohan</p>
+        <strong>$68.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="assets/toy7.jpg" alt="Levi" />
+        <p>Levi</p>
+        <strong>$155.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+      <div class="card">
+        <img src="assets/toy8.jpg" alt="Midoriya" />
+        <p>Midoriya</p>
+        <strong>$70.000</strong>
+        <button onclick="redirectToRegister()">Comprar</button>
+      </div>
+    </div>
+
+    <div class="register-prompt">
+      <p>¿Quieres ver todos los productos y realizar compras?</p>
+      <button class="register-btn" onclick="location.href='register.html'">
+        ¡Regístrate ahora!
+      </button>
+      <p>O <a href="login.html">inicia sesión</a> si ya tienes una cuenta</p>
+    </div>
+  </div>
+
+  <footer class="nav-bottom">
+    <button onclick="location.href='index.html'">🏠</button>
+    <button onclick="scrollToTop()">🔍</button>
+    <button onclick="location.href='login.html'">👤</button>
+  </footer>
+
+  <script>
+    function redirectToRegister() {
+      // Redirige a register.html cuando intentan comprar
+      window.location.href = 'register.html';
+    }
+    
+    function scrollToSection(sectionId) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

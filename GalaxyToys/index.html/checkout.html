@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GalaxyToys - Envío y pago</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <img src="./logo.png" alt="GalaxyToys" class="logo-small" />
+    <div class="icons">
+      <span onclick="history.back()">🔙</span>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>¡Solo un paso más! 🚀</h2>
+    <p>Elige la forma de entrega:</p>
+
+    <form id="formEnvio">
+      <input type="text" placeholder="Dirección de envío" id="direccion" required />
+      <input type="text" placeholder="Ciudad" id="ciudad" required />
+      <input type="tel" placeholder="Teléfono de contacto" id="telefono" required />
+
+      <h3>Total a pagar: <span id="precio" style="color:#00ccff;">$0</span></h3>
+
+      <button type="submit">Confirmar pedido</button>
+    </form>
+  </div>
+
+  <script>
+    const producto = JSON.parse(localStorage.getItem("productoSeleccionado"));
+
+    if (producto) {
+      const precioSpan = document.getElementById("precio");
+      const valor = parseInt(producto.precio);
+      precioSpan.textContent = `$${valor.toLocaleString()}`;
+    }
+
+    document.getElementById("formEnvio").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const direccion = document.getElementById("direccion").value;
+      const ciudad = document.getElementById("ciudad").value;
+      const telefono = document.getElementById("telefono").value;
+
+      // Puedes guardar también los datos del envío si deseas mostrar luego
+      localStorage.setItem("datosEnvio", JSON.stringify({ direccion, ciudad, telefono }));
+
+      alert("¡Gracias por tu compra! 🛍️");
+      location.href = "confirmacion.html";
+    });
+  </script>
+</body>
+</html>
+

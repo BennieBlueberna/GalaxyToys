@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GalaxyToys - Catálogo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="main-header">
+    <img src="./logo.png" alt="GalaxyToys" class="logo-small" />
+    <div class="icons">
+      <span>🔍</span>
+      <span>🛒</span>
+      <span>☰</span>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <!-- Buscador -->
+    <input type="text" placeholder="Buscar juguetes..." class="search-bar" id="searchInput" onkeyup="buscarProducto()" />
+
+    <!-- Botones de categorías -->
+    <div class="categories">
+      <a href="#anime"><button>Anime</button></a>
+      <a href="#bebes"><button>Bebés</button></a>
+      <a href="#electronicos"><button>Electrónicos</button></a>
+      <a href="#destacados"><button>Destacados</button></a>
+    </div>
+
+    <!-- SECCIÓN ANIME -->
+    <h3 id="anime">Anime</h3>
+    <div class="product-carousel">
+      <a href="product.html?nombre=Goku&precio=65000&img=imagen1A.jpg">
+        <div class="card" data-name="Goku"><img src="./assets/imagen1A.jpg"><p>Goku</p><strong>$65.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Eren&precio=150000&img=imagen2A.png">
+        <div class="card" data-name="Eren"><img src="./assets/imagen2A.png"><p>Eren</p><strong>$150.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Momo&precio=75000&img=imagen4A.jpg">
+        <div class="card" data-name="Momo"><img src="./assets/imagen4A.jpg"><p>Momo</p><strong>$75.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Tanjiro&precio=90000&img=imagen8A.png">
+        <div class="card" data-name="Tanjiro"><img src="./assets/imagen8A.png"><p>Tanjiro</p><strong>$90.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Naruto&precio=120000&img=imagen9A.png">
+        <div class="card" data-name="Naruto"><img src="./assets/imagen9A.png"><p>Naruto</p><strong>$120.000</strong><button>Comprar</button></div>
+      </a>
+    </div>
+    <div class="product-carousel">
+      <a href="product.html?nombre=Okorun Peluche&precio=68000&img=imagen7A.png">
+        <div class="card" data-name="Gohan"><img src="./assets/imagen7A.png"><p>Okorun Peluche</p><strong>$68.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Pibe Mot&precio=155000&img=imagen6A.png">
+        <div class="card" data-name="Levi"><img src="./assets/imagen6A.png"><p>Pibe Mot</p><strong>$155.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Luffy figura&precio=70000&img=imagen5A.jpg">
+        <div class="card" data-name="Midoriya"><img src="./assets/imagen5A.jpg"><p>Luffy figura</p><strong>$70.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Dragon ball figuras&precio=88000&img=imagen 3A.png">
+        <div class="card" data-name="Bakugo"><img src="./assets/imagen 3A.png"><p>Dragon ball figuras</p><strong>$88.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Eva 01 Figura&precio=77000&img=imagen10A.jpg">
+        <div class="card" data-name="Killua"><img src="./assets/imagen10A.jpg"><p>Eva 01 Figura</p><strong>$77.000</strong><button>Comprar</button></div>
+      </a>
+    </div>
+
+   <!-- SECCIÓN BEBÉS (nuevos nombres) -->
+    <h3 id="bebes">Bebes</h3>
+    <div class="product-carousel">
+      <a href="product.html?nombre=Mesa bebe&precio=65000&img=Bebe1.png">
+        <div class="card" data-name="Mesa bebe"><img src="./assets/Bebe1.png"><p>Mesa bebe</p><strong>$65.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Crab juega y aprende&precio=150000&img=Bebe2.png">
+        <div class="card" data-name="Crab juega y aprende"><img src="./assets/Bebe2.png"><p>Crab juega y aprende</p><strong>$150.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Ring game&precio=75000&img=Bebe3.png">
+        <div class="card" data-name="Ring game"><img src="./assets/Bebe3.png"><p>Ring game</p><strong>$75.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Capi. peluche&precio=90000&img=Bebe4.png">
+        <div class="card" data-name="Capi. peluche"><img src="./assets/Bebe4.png"><p>Capi. peluche</p><strong>$90.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Koa. Peluche&precio=120000&img=Bebe5.png">
+        <div class="card" data-name="Koa. Peluche"><img src="./assets/Bebe5.png"><p>Koa. Peluche</p><strong>$120.000</strong><button>Comprar</button></div>
+      </a>
+    </div>
+    <div class="product-carousel">
+      <a href="product.html?nombre=Sticth Peluche&precio=68000&img=Bebe6.png">
+        <div class="card" data-name="Sticth Peluche"><img src="./assets/Bebe6.png"><p>Sticth Peluche</p><strong>$68.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Snoop. Peluche&precio=155000&img=Bebe7.png">
+        <div class="card" data-name="Snoop. Peluche"><img src="./assets/Bebe7.png"><p>Snoop. Peluche</p><strong>$155.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Stich & Angel&precio=70000&img=Bebe8.png">
+        <div class="card" data-name="Stich & Angel"><img src="./assets/Bebe8.png"><p>Stich & Angel</p><strong>$70.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Creeper Peluche&precio=88000&img=Bebe9.jpg">
+        <div class="card" data-name="Creeper Peluche"><img src="./assets/Bebe9.jpg"><p>Creeper Peluche</p><strong>$88.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=little Tikes&precio=77000&img=Bebe10.png">
+        <div class="card" data-name="little Tikes"><img src="./assets/Bebe10.png"><p>little Tikes</p><strong>$77.000</strong><button>Comprar</button></div>
+      </a>
+    </div>
+
+    <!-- SECCIÓN ELECTRÓNICOS-->
+    <h3 id="electronicos">Electronicos</h3>
+    <div class="product-carousel">
+      <a href="product.html?nombre=Autobus Control R.&precio=65000&img=Electronic1.png">
+        <div class="card" data-name="Autobus Control R."><img src="./assets/Electronic1.png"><p>Autobus Control R.</p><strong>$65.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Wall-E Interactive&precio=150000&img=Electronic2.png">
+        <div class="card" data-name="Wall-E Interactive"><img src="./assets/Electronic2.png"><p>Wall-E Interactive</p><strong>$150.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Robot Ns400&precio=75000&img=Electronic3.png">
+        <div class="card" data-name="Robot Ns400"><img src="./assets/Electronic3.png"><p>Robot Ns400</p><strong>$75.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Robot Trans.&precio=90000&img=Electronic4.png">
+        <div class="card" data-name="Robot Trans."><img src="./assets/Electronic4.png"><p>Robot Trans.</p><strong>$90.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Baby Shark pinkfong&precio=120000&img=Electronic5.png">
+        <div class="card" data-name="Baby Shark pinkfong"><img src="./assets/Electronic5.png"><p>Baby Shark pinkfong</p><strong>$120.000</strong><button>Comprar</button></div>
+      </a>
+    </div>
+    <div class="product-carousel">
+      <a href="product.html?nombre=Tamagotchi&precio=68000&img=Electronic6.png">
+        <div class="card" data-name="Tamagotchi"><img src="./assets/Electronic6.png"><p>Tamagotchi</p><strong>$68.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Robot JD 500&precio=155000&img=Electronic7.png">
+        <div class="card" data-name="Robot JD 500"><img src="./assets/Electronic7.png"><p>Robot JD 500</p><strong>$155.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Shark Control R.&precio=70000&img=Electronic8.png">
+        <div class="card" data-name="Shark Control R."><img src="./assets/Electronic8.png"><p>Shark Control R.</p><strong>$70.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Pikachu Lampara&precio=88000&img=Electronic9.png">
+        <div class="card" data-name="Pikachu Lampara"><img src="./assets/Electronic9.png"><p>Pikachu Lampara</p><strong>$88.000</strong><button>Comprar</button></div>
+      </a>
+      <a href="product.html?nombre=Pista carro Aut.&precio=77000&img=Electronic10.png">
+        <div class="card" data-name="Pista carro Aut."><img src="./assets/Electronic10.png"><p>Pista carro Aut.</p><strong>$77.000</strong><button>Comprar</button></div>
+      </a>
+    </div>
+
+    <!-- SECCIÓN DESTACADOS (nuevos nombres) -->
+    <h3 id="destacados">Destacados</h3>
+<div class="product-carousel">
+  <a href="product.html?nombre=Barbie Bebe&precio=65000&img=Destacados1.png">
+    <div class="card" data-name="Barbie Bebe"><img src="./assets/Destacados1.png"><p>Barbie Bebe</p><strong>$65.000</strong><button>Comprar</button></div>
+  </a>
+  <a href="product.html?nombre=Barbie Classics&precio=150000&img=Destacados2.png">
+    <div class="card" data-name="Barbie Classics"><img src="./assets/Destacados2.png"><p>Barbie Classics</p><strong>$150.000</strong><button>Comprar</button></div>
+  </a>
+  <a href="product.html?nombre=Hotwheels set F1&precio=75000&img=Destacados3.png">
+    <div class="card" data-name="Hotwheels set F1"><img src="./assets/Destacados3.png"><p>Hotwheels set F1</p><strong>$75.000</strong><button>Comprar</button></div>
+  </a>
+  <a href="product.html?nombre=Spiderman Funko-Pop&precio=90000&img=Destacados4.png">
+    <div class="card" data-name="Spiderman Funko-Pop"><img src="./assets/Destacados4.png"><p>Spiderman Funko-Pop</p><strong>$90.000</strong><button>Comprar</button></div>
+  </a>
+  <a href="product.html?nombre=Pochita Funko-Pop&precio=120000&img=Destacados5.png">
+    <div class="card" data-name="Pochita Funko-Pop"><img src="./assets/Destacados5.png"><p>Pochita Funko-Pop</p><strong>$120.000</strong><button>Comprar</button></div>
+  </a>
+</div>
+<div class="product-carousel">
+  <a href="product.html?nombre=Rei Peluche&precio=68000&img=Destacados6.jpg">
+    <div class="card" data-name="Rei Peluche"><img src="./assets/Destacados6.jpg"><p>Rei Peluche</p><strong>$68.000</strong><button>Comprar</button></div>
+  </a>
+  <a href="product.html?nombre=Star Wars Grogu&precio=155000&img=Destacado7.png">
+    <div class="card" data-name="Star Wars Grogu"><img src="./assets/Destacado7.png"><p>Star Wars Grogu</p><strong>$155.000</strong><button>Comprar</button></div>
+  </a>
+  <a href="product.html?nombre=Lampara Goku&precio=70000&img=Destacados8.png">
+    <div class="card" data-name="Lampara Goku"><img src="./assets/Destacados8.png"><p>Lampara Goku</p><strong>$70.000</strong><button>Comprar</button></div>
+  </a>
+  <a href="product.html?nombre=Carro Control R&precio=88000&img=Destacados9.png">
+    <div class="card" data-name="Carro Control R"><img src="./assets/Destacados9.png"><p>Carro Control R</p><strong>$88.000</strong><button>Comprar</button></div>
+  </a>
+  <a href="product.html?nombre=Gaby´s Toys setx13&precio=77000&img=Destacados10.png">
+    <div class="card" data-name="Gaby´s Toys setx13"><img src="./assets/Destacados10.png"><p>Gaby´s Toys setx13</p><strong>$77.000</strong><button>Comprar</button></div>
+  </a>
+</div>
+
+  <!-- Footer -->
+  <footer class="nav-bottom">
+    <button>🏠</button>
+    <button>🔍</button>
+    <button>👤</button>
+  </footer>
+
+  <!-- Script de búsqueda -->
+  <script>
+    function buscarProducto() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        const nombre = card.dataset.name.toLowerCase();
+        card.style.order = nombre.includes(input) ? "-1" : "0";
+        card.style.border = nombre.includes(input) ? "2px solid #00ccff" : "none";
+      });
+    }
+  </script>
+</body>
+</html>

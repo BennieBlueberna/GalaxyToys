@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="./logo.png" alt="GalaxyToys Logo" class="logo" />
+    <h2>Iniciar sesión</h2>
+    <form id="formLogin">
+      <input type="email" id="correoLogin" placeholder="Correo" required />
+      <input type="password" id="passwordLogin" placeholder="Contraseña" required />
+      <button type="submit">Ingresar</button>
+    </form>
+    <p>¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+  </div>
+
+  <script>
+    document.getElementById("formLogin").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const correo = document.getElementById("correoLogin").value;
+      const password = document.getElementById("passwordLogin").value;
+
+      const usuario = JSON.parse(localStorage.getItem("usuario"));
+
+      if (usuario && usuario.correo === correo && usuario.password === password) {
+        localStorage.setItem("usuarioActivo", JSON.stringify(usuario));
+        alert("¡Bienvenido " + usuario.nombre + "!");
+        location.href = "main.html";
+      } else {
+        alert("Correo o contraseña incorrectos");
+      }
+    });
+  </script>
+</body>
+</html>
+
