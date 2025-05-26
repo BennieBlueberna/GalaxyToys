@@ -1,0 +1,206 @@
+/* === ESTILOS GLOBALES === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #0d0d2b, #1c1c3a);
+  color: white;
+  padding-top: 90px;
+}
+
+/* === ENCABEZADO FIJO === */
+.main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0d0d2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.logo-small {
+  width: 130px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons span {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* === CONTENEDOR GENERAL === */
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* === INICIO Y LOGIN === */
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #ffcc00;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #000;
+}
+
+.register {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+form input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+/* === BARRA DE BÚSQUEDA === */
+.search-bar {
+  width: 90%;
+  padding: 12px;
+  margin: 10px auto 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  display: block;
+}
+
+/* === CATEGORÍAS === */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.categories button {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffcc00;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* === PRODUCTOS === */
+
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  background: white;
+  color: black;
+  width: 180px;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 80px; /* puedes ajustar según lo que necesites */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.card button {
+  margin-top: 10px;
+  background: #00ccff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* === MENÚ INFERIOR === */
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 999;
+}
+
+.nav-bottom button {
+  background: #ffcc00;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* === BANNER DE INVITADO === */
+.guest-banner {
+  width: 100%;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.guest-banner img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+
